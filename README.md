@@ -2,91 +2,142 @@
 
 A Python tool that automatically generates subtitles (SRT files) from video files using OpenAI's Whisper speech recognition model.
 
-## Features
+# **Video Subtitle Generator**  
 
-- Extracts audio from video files (MP4, MOV, AVI, etc.)
-- Transcribes speech to text using Whisper AI
-- Generates properly timed SRT subtitle files
-- Supports multiple Whisper model sizes (tiny, base, small, medium, large)
-- Automatic dependency installation
+[![GitHub stars](https://img.shields.io/github/stars/kingslayer458/Video-Subtitle-generator-Using-Python?style=social)](https://github.com/kingslayer458/Video-Subtitle-generator-Using-Python/stargazers)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-## Installation
+A **Python-based tool** that automatically generates **SRT subtitles** from video files using **OpenAI's Whisper** for accurate speech recognition.  
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/kingslayer458/Video-Subtitle-generator-Using-Python.git
-  
-   ```
+## **✨ Features**  
+✅ Extracts audio from video files (MP4, MOV, AVI, etc.)  
+✅ Supports **multiple Whisper model sizes** (tiny, base, small, medium, large)  
+✅ Generates **timed SRT subtitles**  
+✅ **Auto-installs dependencies** (if missing)  
+✅ Works on **Windows, macOS, and Linux**  
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-   Or let the script install them automatically on first run.
+## **🚀 Installation & Setup**  
 
-## Usage
+### **Prerequisites**  
+- **Python 3.7+**  
+- **FFmpeg** (Required for audio extraction)  
 
-Run the script with Python:
+### **1. Clone the Repository**  
+```bash
+git clone https://github.com/kingslayer458/Video-Subtitle-generator-Using-Python.git
+cd Video-Subtitle-generator-Using-Python
+```  
+
+### **2. Create & Activate a Virtual Environment**  
+```bash
+# Create a virtual environment
+python -m venv subtitle_env
+
+# Activate it
+# Windows:
+subtitle_env\Scripts\activate
+# macOS/Linux:
+source subtitle_env/bin/activate
+```  
+
+### **3. Install Dependencies**  
+```bash
+pip install numpy==1.24.3 SpeechRecognition moviepy openai-whisper pysrt
+```  
+
+---
+
+## **🛠 Usage**  
+
+### **Option 1: Run Directly (Interactive Mode)**  
 ```bash
 python subtitle.py
-```
+```  
+➡️ **Enter the path to your video file** when prompted.  
 
-When prompted, enter the path to your video file.
-
-Alternatively, you can use the class directly in your Python code:
+### **Option 2: Use as a Python Module**  
 ```python
 from subtitle_generator import VideoSubtitleGenerator
 
-generator = VideoSubtitleGenerator("path/to/your/video.mp4", model_size="base")
+# Initialize with video path (optional: model_size="base")
+generator = VideoSubtitleGenerator("your_video.mp4")
+
+# Generate subtitles (returns audio_path, srt_path)
 audio_path, subtitle_path = generator.generate_subtitles()
-```
+print(f"Subtitles saved at: {subtitle_path}")
+```  
 
-### Parameters
-- `video_path`: Path to the input video file (required)
-- `output_dir`: Directory to save output files (default: 'output')
-- `model_size`: Whisper model size (default: 'base', options: tiny, base, small, medium, large)
+### **Optional: Specify Whisper Model Size**  
+```python
+# Available models: tiny, base, small, medium, large
+generator = VideoSubtitleGenerator("video.mp4", model_size="medium")
+```  
 
-## Output
+---
 
-The script will create:
-1. An extracted audio file (`extracted_audio.wav`)
-2. A subtitle file (`subtitles.srt`) in the specified output directory
+## **📂 Output Files**  
+- **`extracted_audio.wav`** (Extracted audio from video)  
+- **`subtitles.srt`** (Generated subtitles in SRT format)  
 
-## Requirements
+By default, files are saved in the **`output/`** folder.  
 
-- Python 3.7+
-- FFmpeg (must be installed and in your system PATH)
+---
 
-### Python Dependencies
-- SpeechRecognition
-- moviepy
-- openai-whisper
-- pysrt
-- numpy
+## **⚡ Performance Tips**  
+- For **short videos**, use `model_size="base"` (faster).  
+- For **high accuracy**, use `model_size="large"` (slower but more precise).  
+- **First run** will download the Whisper model (~100MB–3GB depending on size).  
 
-These will be automatically installed if missing when you run the script.
+---
 
-## Troubleshooting
+## **🔧 Troubleshooting**  
+### **1. FFmpeg Not Found**  
+Install FFmpeg based on your OS:  
+- **Windows**: Download from [ffmpeg.org](https://ffmpeg.org/)  
+- **macOS**: `brew install ffmpeg`  
+- **Linux**: `sudo apt install ffmpeg`  
 
-1. **FFmpeg not found**:
-   - Install FFmpeg on your system
-   - On Windows: Download from https://ffmpeg.org/ and add to PATH
-   - On macOS: `brew install ffmpeg`
-   - On Linux: `sudo apt install ffmpeg`
+### **2. Whisper Model Download Issues**  
+- Check internet connection.  
+- Manually download models using:  
+  ```bash
+  whisper download-model base
+  ```  
 
-2. **Whisper model download issues**:
-   - The script will attempt to download the model automatically
-   - For manual download, see Whisper documentation
+### **3. Dependencies Conflict**  
+Use the provided `numpy==1.24.3` to avoid compatibility issues.  
 
-3. **Large video files**:
-   - For very long videos, consider using a smaller model first
-   - Processing may take significant time and memory
+---
 
-## Contributing
+## **🤝 Contributing**  
+Contributions are welcome!  
+1. **Fork** the repository  
+2. Create a **new branch** (`git checkout -b feature`)  
+3. **Commit** changes (`git commit -m 'Add feature'`)  
+4. **Push** to the branch (`git push origin feature`)  
+5. Open a **Pull Request**  
 
-Contributions are welcome! Please open an issue or pull request for any improvements.
+---
 
-## License
+## **📜 License**  
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.  
 
-MIT License - see LICENSE file for details
+---
+### **⭐ Star the Repo**  
+If you find this useful, **star the repo** to show support!  
+🔗 **[GitHub Link](https://github.com/kingslayer458/Video-Subtitle-generator-Using-Python)**  
+
+---
+
+This version includes:  
+✅ **Badges** (Stars + License)  
+✅ **Clearer headings**  
+✅ **Better formatting**  
+✅ **Performance tips**  
+✅ **Troubleshooting guide**  
+✅ **Contribution guidelines**  
+✅ **Call-to-action (Star the repo)**  
+
+Let me know if you'd like any modifications! 🚀
