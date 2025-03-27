@@ -131,13 +131,6 @@ If you find this useful, **star the repo** to show support!
 
 ---
 
-This version includes:  
-✅ **Badges** (Stars + License)  
-✅ **Clearer headings**  
-✅ **Better formatting**  
-✅ **Performance tips**  
-✅ **Troubleshooting guide**  
-✅ **Contribution guidelines**  
-✅ **Call-to-action (Star the repo)**  
+  
 
 Let me know if you'd like any modifications! 🚀
