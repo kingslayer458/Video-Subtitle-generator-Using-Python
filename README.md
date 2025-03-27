@@ -1,8 +1,5 @@
 # Video-Subtitle-generator-Using-Python
 
-
-# Video Subtitle Generator
-
 A Python tool that automatically generates subtitles (SRT files) from video files using OpenAI's Whisper speech recognition model.
 
 ## Features
