@@ -1,0 +1,660 @@
+1
+00:00:00,000 --> 00:00:02,980
+Hello everyone, this is Mono.
+
+2
+00:00:02,980 --> 00:00:08,520
+I'm the author of this paper and I'm going to explain about the project and about the
+
+3
+00:00:08,520 --> 00:00:11,740
+research paper about how it's working.
+
+4
+00:00:11,740 --> 00:00:13,500
+So let's go.
+
+5
+00:00:13,500 --> 00:00:17,820
+So this is an introduction and first of all before introduction I just want to narrate
+
+6
+00:00:17,820 --> 00:00:18,820
+the topic.
+
+7
+00:00:18,820 --> 00:00:24,240
+This is a topic advanced at the action using machine learning technique with SSH honeypot
+
+8
+00:00:24,240 --> 00:00:27,360
+and honeypot and integrate approach.
+
+9
+00:00:27,360 --> 00:00:29,560
+So let's come to the introduction.
+
+10
+00:00:29,560 --> 00:00:36,660
+So basically we know like we have many service created SSH services.
+
+11
+00:00:36,660 --> 00:00:42,140
+So coming to the SSH topic first we need to know what is SSH SSH is something like secure
+
+12
+00:00:42,140 --> 00:00:49,800
+cell server is allows to computers to remotely connect with each other so we can remotely connect
+
+13
+00:00:49,800 --> 00:00:54,940
+to another system with help of his IP address as well as as password.
+
+14
+00:00:54,940 --> 00:00:59,540
+So this is a like introducing part so you can read over it.
+
+15
+00:00:59,540 --> 00:01:05,560
+And so this says about the impact of SSH service in the cybersecurity world about the
+
+16
+00:01:05,560 --> 00:01:06,560
+RICS.
+
+17
+00:01:06,560 --> 00:01:14,360
+So my project I'm going to combine the so combined SSH honeypot with muscle learning techniques.
+
+18
+00:01:14,360 --> 00:01:22,000
+So that's the basic idea of my project and coming to the search problem statement.
+
+19
+00:01:22,000 --> 00:01:29,420
+So basically the earlier traditional methods they have like they don't have I have
+
+20
+00:01:29,420 --> 00:01:35,180
+muscle learning techniques they have one in lock pace analysis and they post some experimental
+
+21
+00:01:35,180 --> 00:01:37,460
+abilities to combat from this issue.
+
+22
+00:01:37,460 --> 00:01:41,820
+So we are going to integrate the SSH honeypot with muscle learning.
+
+23
+00:01:41,820 --> 00:01:46,540
+So these are the algorithm I'm you going to use not the algorithm but like these are the
+
+24
+00:01:46,540 --> 00:01:47,540
+classifiers are there.
+
+25
+00:01:47,540 --> 00:01:52,460
+Random for us SVM, new ways, decision tree and exhibit and light gpm.
+
+26
+00:01:52,460 --> 00:01:58,140
+So what base upon the Coyote honeypot data I'm going to use a Coyote honeypot data as
+
+27
+00:01:58,140 --> 00:02:03,020
+a data set and for our base upon the data set I will use a muscle learning algorithm
+
+28
+00:02:03,020 --> 00:02:05,060
+on it.
+
+29
+00:02:05,060 --> 00:02:09,740
+And this is a service survey I have like a there from the sources.
+
+30
+00:02:09,740 --> 00:02:11,740
+Which is similar to my topic.
+
+31
+00:02:11,740 --> 00:02:13,740
+So.
+
+32
+00:02:13,740 --> 00:02:20,100
+And out of 15 other I'm going to explain the 3rd first 3.
+
+33
+00:02:20,100 --> 00:02:26,300
+So first one is the Jank in at L. So he proposed honeypot identification with multi
+
+34
+00:02:26,300 --> 00:02:27,300
+fingerprinting.
+
+35
+00:02:27,300 --> 00:02:29,820
+I mean this exists in system.
+
+36
+00:02:29,820 --> 00:02:36,260
+So in this I have I found a gap like they don't don't they don't have a classification.
+
+37
+00:02:36,260 --> 00:02:38,780
+I mean they are basically limited to classification.
+
+38
+00:02:38,780 --> 00:02:44,260
+I mean they they are completely based upon statistical approach and they don't have very
+
+39
+00:02:44,260 --> 00:02:45,260
+behavioral patterns.
+
+40
+00:02:45,260 --> 00:02:48,780
+I mean they can't detect any.
+
+41
+00:02:48,780 --> 00:02:50,100
+Patterns of the attackers.
+
+42
+00:02:50,100 --> 00:02:55,540
+So the main idea for honeypot is like a honeypot it will it will it will like mimic the
+
+43
+00:02:55,540 --> 00:02:56,540
+S is a server.
+
+44
+00:02:56,540 --> 00:03:02,900
+I mean it will act like a actual server but actually it's not is like a stool to get inside
+
+45
+00:03:02,900 --> 00:03:09,420
+about that attack us about is motive about is intent and this is the basic kind of a
+
+46
+00:03:09,420 --> 00:03:11,540
+scope of idea for honeypot.
+
+47
+00:03:11,540 --> 00:03:16,100
+I already explained what is actually put so this is a data server review.
+
+48
+00:03:16,100 --> 00:03:19,540
+So the key funding was multi fingerprinting.
+
+49
+00:03:19,540 --> 00:03:24,180
+The idea of multipriger printing was key funding the first layer changes survey.
+
+50
+00:03:24,180 --> 00:03:27,940
+So which gradually include I have like improved the detection accuracy.
+
+51
+00:03:27,940 --> 00:03:30,020
+So coming to the second one.
+
+52
+00:03:30,020 --> 00:03:38,340
+So second one the firm Mia Filpsia as Jihara so they are working on the third tradition
+
+53
+00:03:38,340 --> 00:03:44,020
+I mean it's same as my project but still they don't have the lack some automation features
+
+54
+00:03:44,020 --> 00:03:48,660
+automation extraction capability and also they are also they are only using random forest
+
+55
+00:03:48,660 --> 00:03:50,060
+as a set to year one.
+
+56
+00:03:50,060 --> 00:03:57,540
+So in my project I'm using six classifier and talking about the third one and they developed
+
+57
+00:03:57,540 --> 00:04:01,980
+a muscle running base for water and effects and look but it comes on this as such.
+
+58
+00:04:01,980 --> 00:04:04,340
+So I did cover this topic.
+
+59
+00:04:04,340 --> 00:04:11,220
+So limitation about this about this surveys like about the support is that like they don't
+
+60
+00:04:11,220 --> 00:04:15,940
+have a temporal sequence and as is of attack provision.
+
+61
+00:04:15,940 --> 00:04:21,060
+I mean same like in the first one they have a bear I mean the first one they have a limitation
+
+62
+00:04:21,060 --> 00:04:26,180
+about the behavioral pattern and in this they have a limitation of temporal analysis of
+
+63
+00:04:26,180 --> 00:04:33,740
+attack and what I'm talking about key finding and they used up I mean what a key finding
+
+64
+00:04:33,740 --> 00:04:37,580
+is they like they literally outperform the traditional signature base and it takes us
+
+65
+00:04:37,580 --> 00:04:38,580
+systems.
+
+66
+00:04:38,580 --> 00:04:40,820
+That's a key fighting.
+
+67
+00:04:40,820 --> 00:04:44,460
+And explain about the three returns of the reviews and let's go to the research gap.
+
+68
+00:04:44,460 --> 00:04:47,659
+So research gap the overview of existing works.
+
+69
+00:04:47,659 --> 00:04:50,780
+So I'm going to explain about the existing work works already present in the assesses and
+
+70
+00:04:50,780 --> 00:04:51,900
+you both will also learn.
+
+71
+00:04:51,900 --> 00:04:52,900
+So it's existing started.
+
+72
+00:04:52,900 --> 00:04:54,099
+It's honey pots.
+
+73
+00:04:54,099 --> 00:04:57,299
+Most of them like primarily rely on the future.
+
+74
+00:04:57,299 --> 00:04:58,299
+It's a protection.
+
+75
+00:04:58,299 --> 00:05:00,700
+So what happens if you rely on the future protection.
+
+76
+00:05:00,700 --> 00:05:03,020
+I mean you can't detect the new and evolving patterns right.
+
+77
+00:05:03,020 --> 00:05:04,020
+So this is an existing one.
+
+78
+00:05:04,020 --> 00:05:08,820
+I mean they cannot a dynamic data analysis activities and it of first of all in the distance
+
+79
+00:05:08,820 --> 00:05:12,099
+away all these papers all this experimental papers they have only used some like two or
+
+80
+00:05:12,100 --> 00:05:16,020
+three I'll go to like to only use two or three classifiers not more than that.
+
+81
+00:05:16,020 --> 00:05:17,020
+So that's a limitation.
+
+82
+00:05:17,020 --> 00:05:18,380
+There's a like research gap is there.
+
+83
+00:05:18,380 --> 00:05:21,460
+So in my finding I'm going to use six algorithms like this are the six of this.
+
+84
+00:05:21,460 --> 00:05:22,460
+I'm going to make.
+
+85
+00:05:22,460 --> 00:05:27,780
+And earlier resource purpose in early scientific paper they have only used one or three
+
+86
+00:05:27,780 --> 00:05:30,180
+like for us as or as we have that's it.
+
+87
+00:05:30,180 --> 00:05:31,180
+And go beyond that.
+
+88
+00:05:31,180 --> 00:05:33,820
+So in my code it doesn't mean that so I'm going to explain all six.
+
+89
+00:05:33,820 --> 00:05:35,180
+I'm going to indicate all six.
+
+90
+00:05:35,180 --> 00:05:37,620
+Classify food and food and food and food.
+
+91
+00:05:37,620 --> 00:05:38,620
+But.
+
+92
+00:05:38,620 --> 00:05:39,700
+And it's a motivation.
+
+93
+00:05:39,700 --> 00:05:42,860
+So we know the motivation we're talking about the motivation.
+
+94
+00:05:42,860 --> 00:05:48,539
+We know how the how the S is a place of white a low in the as I basically stand as
+
+95
+00:05:48,539 --> 00:05:51,460
+ugly in enterprise level production.
+
+96
+00:05:51,460 --> 00:05:56,099
+I mean we do the common uses everyone uses I mean everyone bought a transfer of some files.
+
+97
+00:05:56,099 --> 00:06:01,980
+I want to process up the computing or something fear so basically I've got up trying to
+
+98
+00:06:01,980 --> 00:06:04,380
+say is like the SS pace of rule.
+
+99
+00:06:04,380 --> 00:06:07,300
+I mean there's no protection about that.
+
+100
+00:06:07,300 --> 00:06:09,740
+There's no.
+
+101
+00:06:09,740 --> 00:06:16,180
+What do you say I mean there's no protection or there's no prevention to find about attackers.
+
+102
+00:06:16,180 --> 00:06:25,020
+So to eliminate the vulnerability I mean to enhance the security so I plan was there's
+
+103
+00:06:25,020 --> 00:06:27,260
+already a system about a detection.
+
+104
+00:06:27,260 --> 00:06:28,980
+So there's no system what a muscle learning part.
+
+105
+00:06:28,980 --> 00:06:33,860
+I mean if if also the muscle learning part is there but didn't cover the broad console
+
+106
+00:06:33,860 --> 00:06:35,060
+of muscle learning.
+
+107
+00:06:35,060 --> 00:06:42,140
+So in my significance I'm going to so I'm going to integrate more algorithm so that there
+
+108
+00:06:42,140 --> 00:06:45,860
+won't be need of another using another algorithms.
+
+109
+00:06:45,860 --> 00:06:48,260
+So I covered all algorithms are there.
+
+110
+00:06:48,260 --> 00:06:55,380
+This is the random forest SVM XZ boost L I GPM and base.
+
+111
+00:06:55,380 --> 00:06:56,780
+Let's talk about those photos.
+
+112
+00:06:56,780 --> 00:06:57,780
+This is architecture diagram.
+
+113
+00:06:57,780 --> 00:07:01,380
+You can see I'm using calculate as it so after they go to see.
+
+114
+00:07:01,380 --> 00:07:05,620
+All the data will be removed.
+
+115
+00:07:05,620 --> 00:07:09,820
+All the quiet features are selected.
+
+116
+00:07:09,820 --> 00:07:17,980
+It will label on the base upon a feature X sector features it will label into two types.
+
+117
+00:07:17,980 --> 00:07:22,980
+After the labeling into two types again it will go for data training and and and splitting
+
+118
+00:07:22,980 --> 00:07:27,100
+and based upon the required data and you heard all these algorithm videos.
+
+119
+00:07:27,100 --> 00:07:30,100
+These are the six or five values and these are the results of this.
+
+120
+00:07:30,100 --> 00:07:32,700
+The algorithm is not making it easy to decide.
+
+121
+00:07:32,700 --> 00:07:36,340
+Based upon this muscle learning we will get these three data and let's talk about the
+
+122
+00:07:36,340 --> 00:07:37,340
+methodology.
+
+123
+00:07:37,340 --> 00:07:39,780
+Yeah this is a sample calculate as a catalytic asset.
+
+124
+00:07:39,780 --> 00:07:40,780
+This is how it looks like.
+
+125
+00:07:40,780 --> 00:07:42,180
+This is a session ID IP address time.
+
+126
+00:07:42,180 --> 00:07:45,300
+I mean it will connect you have so many features.
+
+127
+00:07:45,300 --> 00:07:48,300
+So we are based upon the features we are going to predict some analysis as well predict
+
+128
+00:07:48,300 --> 00:07:50,260
+planning activities.
+
+129
+00:07:50,260 --> 00:07:52,580
+So in the catalytic asset already already so new.
+
+130
+00:07:52,580 --> 00:07:57,580
+This is a catalytic asset in this dataset we got like they total 4192 samples are there.
+
+131
+00:07:57,580 --> 00:08:02,460
+So out of 4192 samples we got my list of samples of 721 and I've been in samples of
+
+132
+00:08:02,460 --> 00:08:03,460
+3 votes.
+
+133
+00:08:03,460 --> 00:08:07,180
+And this is a table we have deployed or plotted in table 4 and 5.
+
+134
+00:08:07,180 --> 00:08:08,820
+It shows that matches models.
+
+135
+00:08:08,820 --> 00:08:10,500
+I already discussed before.
+
+136
+00:08:10,500 --> 00:08:14,140
+There we can see this is what I was talking about.
+
+137
+00:08:14,140 --> 00:08:18,860
+And next this is a accuracy we got in the number 4 is we got 94 support vector 95.
+
+138
+00:08:18,860 --> 00:08:20,900
+So this all accuracy I got.
+
+139
+00:08:20,900 --> 00:08:24,299
+I've just plotted all the models accuracy.
+
+140
+00:08:24,300 --> 00:08:26,900
+This all the all this models.
+
+141
+00:08:26,900 --> 00:08:32,539
+Exhibus has a high accuracy of 95.83.
+
+142
+00:08:32,539 --> 00:08:38,659
+So the model is actually predicting this over 15 and under 15 is going on.
+
+143
+00:08:38,659 --> 00:08:45,660
+See we can say that based upon the results and in last read R.O.C curve is plotted
+
+144
+00:08:45,660 --> 00:08:47,660
+for the model for coming well.
+
+145
+00:08:47,660 --> 00:08:51,540
+The prediction is working.
+
+146
+00:08:51,540 --> 00:08:54,459
+So I have used 6 algorithms.
+
+147
+00:08:54,459 --> 00:09:03,540
+This algorithm I have used and I have created I was able to obtain a high detection accuracy
+
+148
+00:09:03,540 --> 00:09:11,140
+in my project of about 95.83% and talking about a feature is a search address.
+
+149
+00:09:11,140 --> 00:09:15,140
+So we can deploy this in a I mean it's only limited to SS one only only one protocol.
+
+150
+00:09:15,140 --> 00:09:18,459
+I mean we can we can show some variability in this to in FTP 10.
+
+151
+00:09:18,460 --> 00:09:19,460
+Let an RTP environment.
+
+152
+00:09:19,460 --> 00:09:22,460
+I mean we can improve some model performance and show some low latency and real time
+
+153
+00:09:22,460 --> 00:09:23,460
+data detection.
+
+154
+00:09:23,460 --> 00:09:25,460
+If we want some data detection.
+
+155
+00:09:25,460 --> 00:09:30,460
+If we want some variable data or huge study about the tackles we can deploy this project
+
+156
+00:09:30,460 --> 00:09:32,460
+on it was easy to instance.
+
+157
+00:09:32,460 --> 00:09:36,820
+Where if you deploy that project on it was easy to instant by doing that we can also find
+
+158
+00:09:36,820 --> 00:09:38,820
+the geodequist and this I mean these are these 4 other future.
+
+159
+00:09:38,820 --> 00:09:42,620
+This is a future what what from this.
+
+160
+00:09:42,620 --> 00:09:48,220
+We can like see our project of our goal of this project is done here was we were successfully
+
+161
+00:09:48,220 --> 00:09:52,580
+able to integrate SSS and port with machine learning.
+
+162
+00:09:52,580 --> 00:09:56,740
+And these are the references and talking about the references I have mentioned 16 references
+
+163
+00:09:56,740 --> 00:10:00,940
+15 references one of the one is the reference to the data set and the here you can see
+
+164
+00:10:00,940 --> 00:10:04,340
+the website I mean without using data set I have used for this project.
+
+165
+00:10:04,340 --> 00:10:04,540
+Thank you.
+
