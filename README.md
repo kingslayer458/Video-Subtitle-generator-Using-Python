@@ -17,8 +17,8 @@ A Python tool that automatically generates subtitles (SRT files) from video file
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/kingslayer458/Video-Subtitle-Generator.git
-   cd video-subtitle-generator
+   git clone https://github.com/kingslayer458/Video-Subtitle-generator-Using-Python.git
+  
    ```
 
 2. Install the required dependencies:
