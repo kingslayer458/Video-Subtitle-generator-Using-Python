@@ -107,7 +107,7 @@ Install FFmpeg based on your OS:
   ```  
 
 ### **3. Dependencies Conflict**  
-Use the provided `numpy==1.24.3` to avoid compatibility issues.  
+Use the provided `numpy==1.24.2` to avoid compatibility issues.  
 
 ---
 
